@@ -1,0 +1,152 @@
+Sprite attribution
+==================
+
+All PNG files under this directory (mon/, hero/, item/) are tiles from
+Dungeon Crawl Stone Soup (DCSS), copied unmodified (pixel data unchanged;
+only file names under mon/ were changed to this game's monster ids).
+
+Source repository : https://github.com/crawl/crawl
+Source path       : crawl-ref/source/rltiles/
+Commit            : cf743e747503946a7456dcd18b451793e1b76895
+Retrieved         : 2026-10-03
+
+License of the tiles
+--------------------
+From the DCSS repository root file LICENSE:
+
+  "The majority of Crawl's tiles and artwork are released under the CC0
+   license (https://creativecommons.org/publicdomain/zero/1.0/), and new
+   submissions are under this license unless otherwise specified. However,
+   the licensing situation may be complex, especially for older pieces. For
+   information regarding the licenses of our tiles and artwork, see
+   https://github.com/crawl/tiles"
+
+The same file lists among the component licenses: "Public Domain|CC0: most
+of tiles, perlin.cc, perlin.h".
+
+From crawl-ref/source/rltiles/license.txt:
+
+  "Part of the graphic tiles used in this program are from the public
+   domain roguelike tileset "RLTiles". Some of the tiles have been modified.
+   You can find the original tileset at: http://rltiles.sf.net"
+
+The crawl/tiles project (https://github.com/crawl/tiles) maintains a list
+of tiles with unclear ownership (TILES_UNDER_UNKNOWN_LICENSE.md). No file
+whose name appears on that list was copied here; the three matching names
+in the folders copied wholesale (player/hand1/demonblade.png,
+item/potion/i-brilliance.png, item/scroll/i-silence.png) were deliberately
+left out, and no monster tile on that list was selected.
+
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+Credits for the artists: https://github.com/crawl/crawl/blob/master/crawl-ref/CREDITS.txt
+and https://github.com/crawl/tiles/blob/master/ARTISTS.md
+
+Monster id -> source tile (relative to crawl-ref/source/rltiles/mon/)
+----------------------------------------------------------------------
+  mon/chicken.png      <- animals/raven.png
+  mon/deer.png         <- animals/yak.png
+  mon/scarecrow.png    <- statues/training_dummy.png
+  mon/cat_rake.png     <- unique/natasha.png
+  mon/cat_hook.png     <- animals/warg.png
+  mon/toad.png         <- animals/cane_toad.png
+  mon/spider.png       <- animals/redback.png
+  mon/orc.png          <- humanoids/orcs/orc.png
+  mon/orc_warrior.png  <- humanoids/orcs/orc_warrior.png
+  mon/orc_hero.png     <- humanoids/orcs/orc_knight.png
+  mon/snowman.png      <- animals/polar_bear.png
+  mon/maggot.png       <- animals/ribbon_worm.png
+  mon/bat.png          <- animals/bat.png
+  mon/zombie.png       <- undead/zombies/zombie_human.png
+  mon/rotting.png      <- undead/bloated_husk.png
+  mon/skeleton.png     <- undead/draugr/draugr_humanoid_medium.png
+  mon/zombie_king.png  <- undead/royal_mummy.png
+  mon/worm_black.png   <- animals/steelbarb_worm.png
+  mon/woma_guard.png   <- humanoids/gnoll.png
+  mon/woma_warrior.png <- humanoids/gnoll_sergeant.png
+  mon/woma_hero.png    <- humanoids/ogre.png
+  mon/woma_lord.png    <- humanoids/oni_incarcerator.png
+  mon/skel_warrior.png <- undead/draugr/draugr_humanoid_large.png
+  mon/skel_axe.png     <- undead/skeletal_warrior.png
+  mon/skel_general.png <- vault/antique_champion.png
+  mon/skel_elite.png   <- undead/ancient_champion.png
+  mon/boar_black.png   <- animals/hell_hog.png
+  mon/boar_white.png   <- animals/hog.png
+  mon/moth.png         <- animals/moth_of_wrath.png
+  mon/zuma_archer.png  <- demihumanoids/taurs/centaur.png
+  mon/zuma_statue.png  <- statues/statue_base.png
+  mon/zuma_guard.png   <- nonliving/iron_golem.png
+  mon/zuma_lord.png    <- statues/obsidian_statue.png
+  mon/blood_giant.png  <- humanoids/giants/fire_giant.png
+  mon/blood_zombie.png <- undead/ghoul.png
+  mon/demon_guard.png  <- demons/red_devil.png
+  mon/red_moon_demon.png <- demons/balrug.png
+  mon/bull_head.png    <- demihumanoids/minotaur.png
+  mon/bull_guard.png   <- demihumanoids/taurs/yaktaur.png
+  mon/bull_general.png <- demihumanoids/taurs/yaktaur_captain.png
+  mon/bull_priest.png  <- humanoids/gnoll_shaman.png
+  mon/bull_king.png    <- unique/asterion.png
+
+Hero layers: hero/base.png <- player/base/human_m.png; hero/body/, hero/head/,
+hero/hand1/ <- player/body/, player/head/, player/hand1/ (top-level files).
+Items: item/<folder>/ <- item/<folder>/ for weapon, armour, armour/headgear,
+ring, amulet, potion, scroll, book, gold.
+The PWA icons in /icons/ are nearest-neighbour upscales of
+item/weapon/greatsword2.png on a solid background.
+
+
+Added 2026-10-03 for continents 2 and 3 (same source, same commit, all CC0):
+dragon_blade/breaker/archer/brute/general/bloodguard/magicguard = mon/draco/draco-base-* composited with mon/draco/draco-job-*
+dragon_titan = dragons/iron_dragon, dragon_blood = dragons/fire_dragon, dragon_lord = dragons/golden_dragon
+moon_spider = animals/orb_spider, moon_guard = nonliving/shadows/shadow_gnoll, moon_warrior = nonliving/shadows/shadow_minotaur, moon_lord = undead/shadow_wraith
+thunder_spider = animals/jumping_spider, thunder_skel = undead/wight, thunder_general = humanoids/ironbound_thunderhulk, thunder_king = dragons/storm_dragon
+seal_guard = nonliving/crystal_guardian, seal_attendant = demons/hell_sentinel, seal_general = demons/executioner, seal_lord = unique/cerebov
+
+
+Added 2026-10-04 for continents 4-6 (same source, same commit, all CC0). Paths relative to
+crawl-ref/source/rltiles/; "mon/" omitted for monster tiles. "recolor" = HSV hue shift / tint done
+in-house on the named tile; "+" = layers composited (DCSS player overlay tiles on a monster base).
+yang = animals/dream_sheep (recolor: desaturated to white), lang = animals/wolf, xie_zi = animals/scorpion
+shi_ren_hua = fungi_plants/thorn_hunter, fen_chong = undead/death_scarab (recolor: brown)
+wo_ma_zhan_jiang = humanoids/oni, huo_yan_wo_ma = humanoids/gnoll_sergeant (recolor: orange-red)
+an_hei_zhan_shi = humanoids/humans/death_knight
+hong_she = aquatic/lava_snake, hu_she = animals/sea_snake, xie_e_du_she = animals/black_mamba
+sha_chong = animals/tyrant_leech (recolor: sand), kui_jia_chong = animals/boulder_beetle
+duo_jiao_chong = animals/crystal_echidna, ju_xing_duo_jiao_chong = animals/mountainshell
+wei_si_er_xiao_chong = animals/radroach, wu_gong = demons/demonic_crawler, tiao_tiao_feng = animals/killer_bee
+ju_xing_ru_chong = aquatic/swamp_worm, qian_chong = animals/bombardier_beetle
+xie_e_qian_chong = animals/goliath_beetle (recolor: darkened), chu_long_shen = aberrations/tentacled_monstrosity
+jiao_ying = animals/vampire_mosquito, bian_fu = animals/vampire_bat, da_lao_shu = animals/rat
+hong_ye_zhu = animals/hog (recolor: red), xie_she = undead/zombies/zombie_scorpion
+shi_mu_shi_wang = unique/menkaure, e_ling_jiang_shi = undead/jiangshi, e_ling_shi_wang = unique/boris
+niu_mo_zhan_shi = demihumanoids/taurs/yaktaur-melee (recolor), niu_mo_dou_shi = demihumanoids/taurs/yaktaur_captain-melee (recolor)
+niu_mo_fa_shi = player/base/minotaur_brown1_m + player/body/robe_purple + player/hand1/staff_mage
+ku_lou_chui_bing / ku_lou_chang_qiang_bing / ku_lou_dao_fu_shou / ku_lou_gong_jian_shou
+  = undead/draugr/draugr_humanoid_medium + player/hand1/great_mace / spear / battleaxe / bow
+huang_quan_jiao_zhu = undead/dread_lich, hong_mo_jiao_zhu = unique/asmodeus (32x48 padded to 48x48)
+hong_mo_zhu_wei = animals/hell_hog (recolor: purple), hong_mo_xie_wei = animals/emperor_scorpion (recolor: purple)
+tian_lang_zhi_zhu = animals/wolf_spider, bao_ya_zhi_zhu = animals/broodmother
+gang_ya_zhi_zhu = undead/simulacra/simulacrum_spider, hei_e_zhi_zhu = undead/zombies/zombie_spider_large
+hua_wen_zhi_zhu = animals/tarantella, huan_ying_zhi_zhu = undead/spectrals/spectral_spider
+ju_du_zhi_zhu = animals/tarantella (recolor: green)
+shuang_tou_jin_gang = humanoids/giants/ettin, shuang_tou_xue_mo = humanoids/two_headed_ogre (recolor: red)
+qian_nian_shu_yao = fungi_plants/alderking0, ban_shou_tong_ling = humanoids/orcs/orc_warlord
+xue_ren_wang = animals/ice_beast, ding_pa_mao_wang = nonliving/shadows/shadow_felid
+duo_gou_mao_wang = animals/hell_hound, ying_wei = animals/hippogriff
+hu_wei = animals/manticore (recolor: orange), mo_long_ju_e = animals/ghost_moth (recolor: red)
+feng_mo_gong_jian_shou = demihumanoids/taurs/centaur (recolor: blue), feng_mo_diao_xiang = statues/statue_base (recolor: violet)
+feng_mo_hu_wei = nonliving/iron_golem (recolor: violet), feng_mo_shi_wang = undead/royal_mummy (recolor: blue)
+feng_mo_xie_e_qian_chong = animals/goliath_beetle (recolor: violet), feng_mo_xie_e_du_she = animals/black_mamba (recolor: purple)
+feng_mo_bai_ye_zhu = animals/hog (recolor: blue-violet)
+
+
+Added 2026-10-04 for the world bosses (暗之 series, Boss 之家). Same source, same commit, all CC0.
+Each is a recolor (in-house: luminance kept, hue pushed to dark violet, saturated highlights turned
+into a pale magenta glow) of this game's own sprite for the matching normal boss:
+an_zhi_wo_ma_jiao_zhu = mon/woma_lord.png = humanoids/oni_incarcerator (recolor: dark violet)
+an_zhi_niu_mo_wang = mon/bull_king.png = unique/asterion (recolor: dark violet)
+an_zhi_hong_mo_jiao_zhu = mon/hong_mo_jiao_zhu.png = unique/asmodeus, 48x48 padded (recolor: dark violet)
+an_zhi_huang_quan_jiao_zhu = mon/huang_quan_jiao_zhu.png = undead/dread_lich (recolor: dark violet)
+an_zhi_ku_lou_jing_ling = mon/skel_elite.png = undead/ancient_champion (recolor: dark violet)
+an_zhi_shuang_tou_jin_gang = mon/shuang_tou_jin_gang.png = humanoids/giants/ettin (recolor: dark violet)
+an_zhi_shuang_tou_xue_mo = mon/shuang_tou_xue_mo.png = humanoids/two_headed_ogre (recolor: dark violet)
+an_zhi_chu_long_shen = mon/chu_long_shen.png = aberrations/tentacled_monstrosity (recolor: dark violet)
